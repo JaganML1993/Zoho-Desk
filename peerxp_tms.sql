@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: Sep 07, 2020 at 09:14 AM
+-- Generation Time: Sep 08, 2020 at 12:28 PM
 -- Server version: 8.0.18
 -- PHP Version: 7.0.33
 
@@ -34,16 +34,16 @@ CREATE TABLE IF NOT EXISTS `user` (
   `name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `date_time` datetime NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `name`, `email`, `password`, `date_time`) VALUES
-(1, 'Jagan M', 'jagan.ml1993@gmail.com', 'jagan@123', '2020-09-05 17:06:07');
+INSERT INTO `user` (`user_id`, `name`, `email`, `password`) VALUES
+(1, 'Jagan M', 'jagan.ml1993@gmail.com', 'jagan@123'),
+(2, 'Jagan ML', 'jaganadhavan05@gmail.com', 'jagan123');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
